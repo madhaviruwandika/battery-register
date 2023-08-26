@@ -28,7 +28,7 @@
 
 ### **Battery-Registry-Service** | *** IMPLEMENTED ***
 
-**See this page : [Documentation]**(battery-registry-service/README.md)
+**See this page : [Documentation](battery-registry-service/README.md)**
 
 ### Battery-Sync-Service | *** NOT IMPLEMENTED ***
 
