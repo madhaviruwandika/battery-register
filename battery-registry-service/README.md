@@ -21,6 +21,17 @@ This is a microservice which act as battery registry. This is capable of registe
   ``./gradlew bootrun``
 - Access the Swagger UI by ``http://localhost:8080/swagger-ui/index.html#``
 
+# Local environment setup [Docker]
+
+- Navigate to the folder `battery-registry-service` if you are in the project folder
+- Run following command to build and start the application
+
+  ``docker build --tag=battery-registry-service:latest .``
+
+  ``docker run -p8080:8080 battery-registry-service:latest``
+- Access the Swagger UI by ``http://localhost:8080/swagger-ui/index.html#``
+
+
 # API Documentation
 - Swagger 3 is integrated for API documentation
 - URL : http://localhost:8080/swagger-ui/index.html
