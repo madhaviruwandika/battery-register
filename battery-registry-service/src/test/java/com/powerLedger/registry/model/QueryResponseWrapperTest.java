@@ -1,6 +1,7 @@
 package com.powerLedger.registry.model;
 
 import com.powerLedger.registry.dao.Entity.Battery;
+import com.powerLedger.registry.model.QueryResponseWrapper;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 

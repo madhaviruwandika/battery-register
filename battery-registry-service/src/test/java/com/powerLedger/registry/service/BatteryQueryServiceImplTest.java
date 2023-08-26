@@ -6,6 +6,7 @@ import com.powerLedger.registry.model.BatteryFilterDTO;
 import com.powerLedger.registry.model.QueryResponseWrapper;
 import com.powerLedger.registry.model.SortBy;
 import com.powerLedger.registry.model.SortOrder;
+import com.powerLedger.registry.service.BatteryQueryServiceImpl;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

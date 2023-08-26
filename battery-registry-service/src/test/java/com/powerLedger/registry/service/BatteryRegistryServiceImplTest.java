@@ -4,6 +4,7 @@ import com.powerLedger.registry.dao.BatteryRepository;
 import com.powerLedger.registry.dao.Entity.Battery;
 import com.powerLedger.registry.model.BatteryDTO;
 import com.powerLedger.registry.model.RegistryResponseWrapper;
+import com.powerLedger.registry.service.BatteryRegistryServiceImpl;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
