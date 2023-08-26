@@ -26,22 +26,20 @@
 
 ![My Image](highlevelArch.png)
 
-### Battery-Registry-Service
+### **Battery-Registry-Service** | *** IMPLEMENTED ***
 
-See this page : [Documentation](battery-registry-service/README.md)
+**See this page : [Documentation]**(battery-registry-service/README.md)
 
-### Battery-Sync-Service
+### Battery-Sync-Service | *** NOT IMPLEMENTED ***
 
-*** NOT IMPLEMENTED ***
 
-This is a service which connects to a Kafka stream which have real time battery updates. This will be responsible for act as a processor which update database based on the messages. 
 
+This is a service which connects to a Kafka stream which have real time battery updates. This will be responsible for act as a processor which update database based on the messages.
 Having this as a separate service will be beneficial because it will not put load on battery-registry-service which has interface for querying data 
 
-### Database
+### Database | *** Test Application was developed with H2 in memory DB ***
 
-Given the concurrent environment of the application(battery registration and update with data streaming), Prefer to go with Relational database like PostgreSQL.
-Test Application was developed with H2 in memory DB.
+Given the concurrent environment of the application(battery registration and update with data streaming), Proposing to go with Relational database - PostgreSQL.
 
 - DB Config
   - username and password are hardcoded since this is a testing application. Strictly avoiding these with live application.Environment variable will be used to pass values 
