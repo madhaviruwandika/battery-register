@@ -4,6 +4,24 @@
 1. Battery name and post code  is a unique value.
 2. Once the batteries are registered battery information/updates are available via a stream (selected Kafka)
 
+# Archived Goals
+1. Core requirement of implementing REST API in Spring Boot with given endpoints to register batteries + query batteries
+2. Ensured the system can handle a large number of battery registrations concurrently with Spring JPA transactions + validations such as unique key constraints
+3. Extended the postcode range query to allow filtering based on minimum or maximum watt capacity.
+4. Introduced an endpoint to identify batteries below a certain capacity threshold.
+5. Integrated a logging framework and logs were added appropriately in the service along with the Correlation-Id.
+6. Endpoint was configured for health checks and metrics.
+7. Unit testing was added 
+8. Swagger3 is integrated for API documentation. 
+9. Ensured backward compatibility for the API and provided versioning
+10. Containerize the application using Docker (Used for local set up)
+
+# Suggestions were documented for 
+
+* They Architecture for introduce a real-time data stream (e.g., using Kafka or RabbitMQ) that sends updates on battery capacities.
+* Database selection for storing data
+* Resilience4j for rate limiting
+
 # High level Architecture
 
 ![My Image](highlevelArch.png)
@@ -40,7 +58,6 @@ Test Application was developed with H2 in memory DB.
     UNIQUE KEY unique_key_battery_name_post_code (name, post_code)
     );
   ```
-
 
 - Indexes
     - Index on "post_code" : Proposing this as battery information is queries based on the post code 

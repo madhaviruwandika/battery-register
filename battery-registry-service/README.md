@@ -39,7 +39,7 @@ This is a microservice which act as battery registry. This is capable of registe
 # Endpoints
 
 1. Register Batteries
-   - Endpoint URI: `/battery/register`
+   - Endpoint URI: `/api/v1/battery/register`
    - Method : `POST`
    - Request Body Sample
        ```
@@ -65,11 +65,11 @@ This is a microservice which act as battery registry. This is capable of registe
 
 2. Fetch batteries with search criteria (between post code range, order alphabetically. Order by watt capacity )
 
-   - Endpoint URI: `battery/post-codes`
+   - Endpoint URI: `api/v1/battery/post-codes`
    - Method : `GET`
    - Request Body Sample
        ```
-       curl -X 'GET' 'http://localhost:8080/battery/post-codes?postCodeFrom=1000&postCodeTo=1001&sortBy=NAME&sortOrder=ASC' -H 'accept: application/json'
+       curl -X 'GET' 'http://localhost:8080/api/v1/battery/post-codes?postCodeFrom=1000&postCodeTo=1001&sortBy=NAME&sortOrder=ASC' -H 'accept: application/json'
        ```
    - Response Body Sample
      ```
@@ -97,11 +97,11 @@ This is a microservice which act as battery registry. This is capable of registe
 
 3. Fetch batteries where the battery capacity is bellow the given value
 
-   - Endpoint URI: `/battery/watt-capacity/{max-capacity}/below`
+   - Endpoint URI: `/api/v1/battery/watt-capacity/{max-capacity}/below`
    - Method : `GET`
    - Request Body Sample
        ```
-       curl -X 'GET' 'http://localhost:8080/battery/watt-capacity/200/below' -H 'accept: application/json'
+       curl -X 'GET' 'http://localhost:8080/api/v1/battery/watt-capacity/200/below' -H 'accept: application/json'
        ```
    - Response Body Sample
        ```

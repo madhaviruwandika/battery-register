@@ -23,7 +23,7 @@ import java.util.Map;
  */
 
 @RestController
-@RequestMapping(value = "/battery", produces = MediaType.APPLICATION_JSON_VALUE)
+@RequestMapping(value = "/api/v1/battery", produces = MediaType.APPLICATION_JSON_VALUE)
 @Tag(name = "Battery Register Controller")
 public class BatteryRegistryController {
 

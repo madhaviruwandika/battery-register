@@ -21,7 +21,7 @@ import java.util.List;
 
 @Slf4j
 @RestController
-@RequestMapping(value = "/battery", produces = MediaType.APPLICATION_JSON_VALUE)
+@RequestMapping(value = "/api/v1/battery", produces = MediaType.APPLICATION_JSON_VALUE)
 public class BatteryQueryController {
     BatteryQueryService batteryQueryService;
 
