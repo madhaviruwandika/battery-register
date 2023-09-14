@@ -24,7 +24,7 @@
 
 # High level Architecture
 
-![My Image](highlevelArch.png)
+![My Image](img1.png)
 
 ### **Battery-Registry-Service** | *** IMPLEMENTED ***
 
